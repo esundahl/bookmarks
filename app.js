@@ -1,16 +1,13 @@
-
-/**
- * Module dependencies.
- */
-
+// Module Dependencies
 var express = require('express')
-  , routes = require('./routes')
   , http = require('http')
   , path = require('path')
   , make = require('./lib/make');
 
+// Setup The Application
 var app = express();
 
+// Configure Application & Middleware
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
@@ -22,15 +19,17 @@ app.configure(function(){
   app.use(make);
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
-  
 });
 
+// Development Only Configurations
 app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
+// Initialize Routes Module
+require('./lib/routes')(app)
 
+// Create & Start The Server
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
