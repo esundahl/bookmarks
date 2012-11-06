@@ -4,7 +4,9 @@
   "description": "simple bookmarking application built using express and components",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "necolas/normalize.css": "*"
+  },
   "development": {},
   "license": "MIT",
   "scripts": [
