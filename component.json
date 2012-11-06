@@ -1,0 +1,13 @@
+{
+  "name": "bookmarks",
+  "repo": "esundahl/bookmarks",
+  "description": "simple bookmarking application built using express and components",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
