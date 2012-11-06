@@ -7,9 +7,10 @@
   "dependencies": {
     "necolas/normalize.css": "*"
   },
+  "local": [
+    "boot"
+  ],
   "development": {},
   "license": "MIT",
-  "scripts": [
-    "index.js"
-  ]
+  "scripts": []
 }
