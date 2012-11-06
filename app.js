@@ -6,7 +6,8 @@
 var express = require('express')
   , routes = require('./routes')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , make = require('./lib/make');
 
 var app = express();
 
@@ -18,8 +19,10 @@ app.configure(function(){
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
+  app.use(make);
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
+  
 });
 
 app.configure('development', function(){
