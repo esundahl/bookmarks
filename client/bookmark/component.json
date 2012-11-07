@@ -1,0 +1,13 @@
+{
+  "name": "bookmark",
+  "description": "bookmark model",
+  "keywords": [],
+  "dependencies": {
+    "component/model": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
