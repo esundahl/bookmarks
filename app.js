@@ -27,7 +27,7 @@ app.configure('development', function(){
 });
 
 // Initialize Routes Module
-require('./lib/routes')(app)
+require('./server/routes')(app)
 
 // Create & Start The Server
 http.createServer(app).listen(app.get('port'), function(){
