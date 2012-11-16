@@ -1,0 +1,13 @@
+{
+  "name": "bookmark-list-view",
+  "description": "list view for bookmarks",
+  "dependencies": {},
+  "development": {},
+  "local": ["bookmark-view"],
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "bookmark-list-view.css"
+  ]
+}

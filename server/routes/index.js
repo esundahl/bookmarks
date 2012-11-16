@@ -1,12 +1,11 @@
 module.exports = function(app) {
   
-  // Root Route
-  app.get('/', function (req, res){
-    res.render('layout');
-  });
+  require('./bookmarks')(app);
   
   // Import Bookmarks Resource
-  require('./bookmarks')(app);
+  app.get('*', function (req, res){
+    res.render('layout');
+  });
   
 }
 

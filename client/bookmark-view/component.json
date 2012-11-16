@@ -1,0 +1,16 @@
+{
+  "name": "bookmark-view",
+  "description": "single bookmark",
+  "dependencies": {
+    "component/view": "*",
+    "component/domify": "*"
+  },
+  "development": {},
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "bookmark-view.css"
+  ]
+}

@@ -5,12 +5,16 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "necolas/normalize.css": "*"
+    "necolas/normalize.css": "*",
+    "component/simple-grid": "*"
   },
   "local": [
-    "boot"
+    "boot",
+    "base-styles"
   ],
-  "development": {},
+  "development": {
+  },
+  "paths": ["client"],
   "license": "MIT",
   "scripts": []
 }

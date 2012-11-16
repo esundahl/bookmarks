@@ -3,7 +3,8 @@
   "description": "bookmark model",
   "keywords": [],
   "dependencies": {
-    "component/model": "*"
+    "component/model": "*",
+    "component/emitter": "*"
   },
   "development": {},
   "license": "MIT",

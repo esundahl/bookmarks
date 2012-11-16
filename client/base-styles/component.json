@@ -1,0 +1,10 @@
+{
+  "name": "base-styles",
+  "description": "base styles for the application",
+  "dependencies": {},
+  "development": {},
+  "styles": [
+    "base-styles.css"
+  ],
+  "images": ["asfalt.png"]
+}

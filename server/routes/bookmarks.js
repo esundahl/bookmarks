@@ -5,7 +5,7 @@ var mongo = require('mongoskin'),
 module.exports = function (app) {
   
   // GET /bookmarks
-  app.get('/api/bookmarks', function (req, res) {
+  app.get('/bookmark/all', function (req, res) {
     bookmarks.find().toArray(function (err, docs) {
       if (err) {
         throw err;
@@ -15,7 +15,7 @@ module.exports = function (app) {
   });
   
   // POST /bookmarks
-  app.post('/api/bookmarks', function (req, res) {
+  app.post('/bookmark', function (req, res) {
     bookmarks.insert(req.body, function (err, docs) {
       if (err) {
         throw err;
@@ -25,7 +25,7 @@ module.exports = function (app) {
   });
   
   // GET /bookmarks/:id
-  app.get('/api/bookmarks/:id', function (req, res) {
+  app.get('/bookmark/:id', function (req, res) {
     bookmarks.findById(req.params.id, function (err, docs) {
       if (err) {
         throw err;
@@ -35,7 +35,7 @@ module.exports = function (app) {
   });
   
   // PUT /bookmarks/:id
-  app.put('/api/bookmarks/:id', function (req, res) {
+  app.put('/bookmark/:id', function (req, res) {
     delete(req.body._id);
     bookmarks.updateById(req.params.id, req.body, {}, function (err, docs) {
       if (err) {
@@ -46,7 +46,7 @@ module.exports = function (app) {
   });
   
   // DELETE /bookmarks/:id
-  app.delete('/api/bookmarks/:id', function (req, res) {
+  app.delete('/bookmark/:id', function (req, res) {
     delete(req.body._id);
     bookmarks.removeById(req.params.id, {}, function (err, docs) {
       if (err) {

@@ -1,0 +1,15 @@
+{
+  "name": "app-header",
+  "description": "main application header",
+  "dependencies": {
+    "component/domify": "*"
+  },
+  "development": {},
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "app-header.css"
+  ]
+}

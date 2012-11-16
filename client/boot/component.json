@@ -1,10 +1,12 @@
 {
   "name": "boot",
-  "repo": "esundahl/boot",
   "description": "boot component for the bookmarks application",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "visionmedia/page.js": "*"
+  },
+  "local": ["bookmark", "app-view"],
   "development": {},
   "license": "MIT",
   "scripts": [

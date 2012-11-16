@@ -1,0 +1,13 @@
+{
+  "name": "app-view",
+  "description": "main application view",
+  "dependencies": {
+    "component/view": "*",
+    "component/emitter": "*"
+  },
+  "local": ["app-header", "bookmark-list-view"],
+  "development": {},
+  "scripts": [
+    "index.js"
+  ]
+}

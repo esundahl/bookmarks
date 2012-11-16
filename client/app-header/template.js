@@ -1,0 +1,1 @@
+module.exports = '<header class=\'main\'>\n	<h1 class=\'logo\'>Bookmarks</h1>\n</header>';
